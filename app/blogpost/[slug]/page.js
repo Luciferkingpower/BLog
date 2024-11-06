@@ -1,5 +1,5 @@
-import fs from "fs";
 import path from "path";
+import fs from "fs"
 import matter from "gray-matter";
 import { notFound } from "next/navigation";
 import rehypeDocument from "rehype-document";
@@ -11,18 +11,27 @@ import { unified } from "unified";
 import rehypePrettyCode from "rehype-pretty-code";
 import { transformerCopyButton } from "@rehype-pretty/transformers";
 
-export default async function Page({ params }) { 
-    
-    const param = await params
+// Function to read markdown content from public folder
+async function getMarkdownContent(slug) {
+    const filepath = path.join(process.cwd(), 'public', 'content', `${slug}.md`);
+    try {
+        const fileContent = await fs.promises.readFile(filepath, 'utf-8');
+        return fileContent;
+    } catch (error) {
+        console.error('Error reading file:', error);
+        return null;
+    }
+}
+
+export default async function Page({ params }) {
+    const param = await params; // Destructure slug directly
     const slug = param.slug
-    // console.log(slug)
-    const filepath = `content/${slug}.md`
-    
-    if (!fs.existsSync(filepath)) {
+    const fileContent = await getMarkdownContent(slug);
+
+    if (!fileContent) {
         return notFound();
     }
 
-    const fileContent = fs.readFileSync(filepath, "utf-8");
     const { content, data } = matter(fileContent);
 
     const processor = unified()
