@@ -11,15 +11,18 @@ const Navbar = () => {
   const [progress, setProgress] = useState(0);
   const pathname = usePathname();
 
-  useEffect(() => {
-    setProgress(30);
-    setTimeout(() => {
-      setProgress(70);
-    }, 100);
-    setTimeout(() => {
-      setProgress(100);
-    }, 800);
-  }, [pathname]);
+    useEffect(() => {
+      setProgress(20);
+      setTimeout(() => {
+        setProgress(50);
+      }, 50);
+      setTimeout(() => {
+        setProgress(80);
+      }, 80);
+      setTimeout(() => {
+        setProgress(100);
+      }, 100);
+    }, [pathname]);
 
   useEffect(() => {
     setTimeout(() => {
@@ -39,7 +42,7 @@ const Navbar = () => {
         height={3}
         onLoaderFinished={() => console.log('Loader finished')}
       />
-      <div className="max-w-7xl mx-auto flex justify-between items-center flex-wrap">
+      <div className="max-w-7xl p-2 mx-auto flex justify-between items-center flex-wrap">
         {/* Logo */}
         <div className="text-2xl font-bold text-gray-900 dark:text-gray-100">
           <Link href="/">
