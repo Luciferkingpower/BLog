@@ -8,11 +8,11 @@ import { useRouter } from 'next/router';
 
 export default function Home() {
 
-  const router = useRouter();
+  {/*const router = useRouter();
 
   const navigateToContact = () => {
     router.push('/contact');
-  };
+  };*/}
   
   const el = useRef(null);
   React.useEffect(() => {
@@ -80,7 +80,7 @@ export default function Home() {
       <li>✔ 1GB Storage</li>
     </ul>
     <p className="mt-4 text-sm text-gray-500">* Best suited for personal use.</p>
-    <button onClick={navigateToContact} className="mt-8 px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition duration-300 w-full">Get Started</button>
+    <button className="mt-8 px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition duration-300 w-full">Get Started</button>
   </div>
   
   {/* Standard Tier */}
@@ -94,7 +94,7 @@ export default function Home() {
       <li>✔ 5GB Storage</li>
     </ul>
     <p className="mt-4 text-sm text-gray-500">* Recommended for growing businesses.</p>
-    <button onClick={navigateToContact} className="mt-8 px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition duration-300 w-full">Get Started</button>
+    <button  className="mt-8 px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition duration-300 w-full">Get Started</button>
   </div>
   
   {/* Premium Tier */}
@@ -108,7 +108,7 @@ export default function Home() {
       <li>✔ 20GB Storage</li>
     </ul>
     <p className="mt-4 text-sm text-gray-500">* Best for enterprise-level solutions.</p>
-   <button onClick={navigateToContact} className="mt-8 px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition duration-300 w-full">Get Started</button>
+   <button  className="mt-8 px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition duration-300 w-full">Get Started</button>
   </div>
 
 </div>
