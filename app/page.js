@@ -59,182 +59,51 @@ export default function Home() {
             Pricing Plans
           </h2>
           <div className="flex flex-wrap justify-center space-x-4 space-y-4 md:space-y-0">
-            {/* Basic Tier */}
-            <div className="dark:bg-gray-800 shadow-lg rounded-lg p-6 text-center transition-transform transform hover:scale-105 w-full max-w-xs">
-              <h3 className="text-xl text/background font-semibold">Basic</h3>
-              <p className="mt-2 text/background">
-                Perfect for individuals and small projects.
-              </p>
-              <p className="mt-4 text-3xl font-bold text/background">
-                $10 / month
-              </p>
-              <ul className="mt-6 space-y-2">
-                <li className="flex items-center justify-center">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="currentColor"
-                    className="w-5 h-5 text-green-500"
-                    viewBox="0 0 20 20"
-                  >
-                    <path d="M10 3a1 1 0 011 1v2a1 1 0 11-2 0V4a1 1 0 011-1zM4 10a1 1 0 100-2 1 1 0 000 2zm10 0a1 1 0 100-2 1 1 0 000 2zM3 14a1 1 0 001 1h12a1 1 0 000-2H4a1 1 0 00-1 1z" />
-                  </svg>
-                  <span className="ml-2 text/background">
-                    Feature 1: Up to 5 projects
-                  </span>
-                </li>
-                <li className="flex items-center justify-center">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="currentColor"
-                    className="w-5 h-5 text-green-500"
-                    viewBox="0 0 20 20"
-                  >
-                    <path d="M10 3a1 1 0 011 1v2a1 1 0 11-2 0V4a1 1 0 011-1zM4 10a1 1 0 100-2 1 1 0 000 2zm10 0a1 1 0 100-2 1 1 0 000 2zM3 14a1 1 0 001 1h12a1 1 0 000-2H4a1 1 0 00-1 1z" />
-                  </svg>
-                  <span className="ml-2 text/background">
-                    Feature 2: Basic Support
-                  </span>
-                </li>
-                <li className="flex items-center justify-center">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="currentColor"
-                    className="w-5 h-5 text-green-500"
-                    viewBox="0 0 20 20"
-                  >
-                    <path d="M10 3a1 1 0 011 1v2a1 1 0 11-2 0V4a1 1 0 011-1zM4 10a1 1 0 100-2 1 1 0 000 2zm10 0a1 1 0 100-2 1 1 0 000 2zM3 14a1 1 0 001 1h12a1 1 0 000-2H4a1 1 0 00-1 1z" />
-                  </svg>
-                  <span className="ml-2 text/background">
-                    Feature 3: 2GB Storage
-                  </span>
-                </li>
-              </ul>
-              <p className="mt-4 text-sm text-gray-500">
-                * Best suited for personal use.
-              </p>
-              <button className="mt-8 px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition duration-300 w-full">
-                Get Started
-              </button>
-            </div>
+  
+  {/* Basic Tier */}
+  <div className="dark:bg-gray-800 bg-white shadow-lg rounded-lg p-6 text-center transform hover:scale-105 w-full max-w-xs transition-transform">
+    <h3 className="text-xl font-semibold text-gray-800 dark:text-white">Basic</h3>
+    <p className="mt-2 text-gray-600 dark:text-gray-400">Perfect for individuals and small projects.</p>
+    <p className="mt-4 text-3xl font-bold text-gray-800 dark:text-white">₹4000 / project</p>
+    <ul className="mt-6 space-y-2 text-gray-600 dark:text-gray-400">
+      <li>✔ Up to 3 pages</li>
+      <li>✔ Basic design and layout</li>
+      <li>✔ 1GB Storage</li>
+    </ul>
+    <p className="mt-4 text-sm text-gray-500">* Best suited for personal use.</p>
+    <button className="mt-8 px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition duration-300 w-full">Get Started</button>
+  </div>
+  
+  {/* Standard Tier */}
+  <div className="dark:bg-gray-800 bg-white shadow-lg rounded-lg p-6 text-center transform hover:scale-105 w-full max-w-xs transition-transform">
+    <h3 className="text-xl font-semibold text-gray-800 dark:text-white">Standard</h3>
+    <p className="mt-2 text-gray-600 dark:text-gray-400">Ideal for freelancers and small businesses.</p>
+    <p className="mt-4 text-3xl font-bold text-gray-800 dark:text-white">₹8000 / project</p>
+    <ul className="mt-6 space-y-2 text-gray-600 dark:text-gray-400">
+      <li>✔ Up to 7 pages</li>
+      <li>✔ Enhanced design and features</li>
+      <li>✔ 5GB Storage</li>
+    </ul>
+    <p className="mt-4 text-sm text-gray-500">* Recommended for growing businesses.</p>
+    <button className="mt-8 px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition duration-300 w-full">Get Started</button>
+  </div>
+  
+  {/* Premium Tier */}
+  <div className="dark:bg-gray-800 bg-white shadow-lg rounded-lg p-6 text-center transform hover:scale-105 w-full max-w-xs transition-transform">
+    <h3 className="text-xl font-semibold text-gray-800 dark:text-white">Premium</h3>
+    <p className="mt-2 text-gray-600 dark:text-gray-400">For larger teams and advanced projects.</p>
+    <p className="mt-4 text-3xl font-bold text-gray-800 dark:text-white">₹14000 / project</p>
+    <ul className="mt-6 space-y-2 text-gray-600 dark:text-gray-400">
+      <li>✔ Unlimited pages</li>
+      <li>✔ Custom design with animations</li>
+      <li>✔ 20GB Storage</li>
+    </ul>
+    <p className="mt-4 text-sm text-gray-500">* Best for enterprise-level solutions.</p>
+    <button className="mt-8 px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition duration-300 w-full">Get Started</button>
+  </div>
 
-            {/* Standard Tier */}
-            <div className="bg-gray-100 dark:bg-gray-800 shadow-lg rounded-lg p-6 text-center transition-transform transform hover:scale-105 w-full max-w-xs">
-              <h3 className="text-xl font-semibold dark:text-gray-100 text-gray-800">
-                Standard
-              </h3>
-              <p className="mt-2 text/background">
-                Ideal for freelancers and small businesses.
-              </p>
-              <p className="mt-4 text-3xl font-bold text/background">
-                $30 / month
-              </p>
-              <ul className="mt-6 space-y-2">
-                <li className="flex items-center justify-center">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="currentColor"
-                    className="w-5 h-5 text-green-500"
-                    viewBox="0 0 20 20"
-                  >
-                    <path d="M10 3a1 1 0 011 1v2a1 1 0 11-2 0V4a1 1 0 011-1zM4 10a1 1 0 100-2 1 1 0 000 2zm10 0a1 1 0 100-2 1 1 0 000 2zM3 14a1 1 0 001 1h12a1 1 0 000-2H4a1 1 0 00-1 1z" />
-                  </svg>
-                  <span className="ml-2 text/background">
-                    Feature 1: Up to 15 projects
-                  </span>
-                </li>
-                <li className="flex items-center justify-center">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="currentColor"
-                    className="w-5 h-5 text-green-500"
-                    viewBox="0 0 20 20"
-                  >
-                    <path d="M10 3a1 1 0 011 1v2a1 1 0 11-2 0V4a1 1 0 011-1zM4 10a1 1 0 100-2 1 1 0 000 2zm10 0a1 1 0 100-2 1 1 0 000 2zM3 14a1 1 0 001 1h12a1 1 0 000-2H4a1 1 0 00-1 1z" />
-                  </svg>
-                  <span className="ml-2 text/background">
-                    Feature 2: Priority Support
-                  </span>
-                </li>
-                <li className="flex items-center justify-center">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="currentColor"
-                    className="w-5 h-5 text-green-500"
-                    viewBox="0 0 20 20"
-                  >
-                    <path d="M10 3a1 1 0 011 1v2a1 1 0 11-2 0V4a1 1 0 011-1zM4 10a1 1 0 100-2 1 1 0 000 2zm10 0a1 1 0 100-2 1 1 0 000 2zM3 14a1 1 0 001 1h12a1 1 0 000-2H4a1 1 0 00-1 1z" />
-                  </svg>
-                  <span className="ml-2 text/background">
-                    Feature 3: 10GB Storage
-                  </span>
-                </li>
-              </ul>
-              <p className="mt-4 text-sm text-gray-500">
-                * Recommended for growing teams.
-              </p>
-              <button className="mt-8 px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition duration-300 w-full">
-                Get Started
-              </button>
-            </div>
+</div>
 
-            {/* Premium Tier */}
-            <div className="bg-gray-100 dark:bg-gray-800 shadow-lg rounded-lg p-6 text-center transition-transform transform hover:scale-105 w-full max-w-xs">
-              <h3 className="text-xl font-semibold text/background">Premium</h3>
-              <p className="mt-2 text/background">
-                For larger teams and advanced projects.
-              </p>
-              <p className="mt-4 text-3xl font-bold text/background">
-                $60 / month
-              </p>
-              <ul className="mt-6 space-y-2">
-                <li className="flex items-center justify-center">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="currentColor"
-                    className="w-5 h-5 text-green-500"
-                    viewBox="0 0 20 20"
-                  >
-                    <path d="M10 3a1 1 0 011 1v2a1 1 0 11-2 0V4a1 1 0 011-1zM4 10a1 1 0 100-2 1 1 0 000 2zm10 0a1 1 0 100-2 1 1 0 000 2zM3 14a1 1 0 001 1h12a1 1 0 000-2H4a1 1 0 00-1 1z" />
-                  </svg>
-                  <span className="ml-2 text/background">
-                    Feature 1: Unlimited projects
-                  </span>
-                </li>
-                <li className="flex items-center justify-center">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="currentColor"
-                    className="w-5 h-5 text-green-500"
-                    viewBox="0 0 20 20"
-                  >
-                    <path d="M10 3a1 1 0 011 1v2a1 1 0 11-2 0V4a1 1 0 011-1zM4 10a1 1 0 100-2 1 1 0 000 2zm10 0a1 1 0 100-2 1 1 0 000 2zM3 14a1 1 0 001 1h12a1 1 0 000-2H4a1 1 0 00-1 1z" />
-                  </svg>
-                  <span className="ml-2 text/background">
-                    Feature 2: 24/7 Support
-                  </span>
-                </li>
-                <li className="flex items-center justify-center">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="currentColor"
-                    className="w-5 h-5 text-green-500"
-                    viewBox="0 0 20 20"
-                  >
-                    <path d="M10 3a1 1 0 011 1v2a1 1 0 11-2 0V4a1 1 0 011-1zM4 10a1 1 0 100-2 1 1 0 000 2zm10 0a1 1 0 100-2 1 1 0 000 2zM3 14a1 1 0 001 1h12a1 1 0 000-2H4a1 1 0 00-1 1z" />
-                  </svg>
-                  <span className="ml-2 text/background">
-                    Feature 3: 50GB Storage
-                  </span>
-                </li>
-              </ul>
-              <p className="mt-4 text-sm text-gray-500">
-                * Best for enterprise-level solutions.
-              </p>
-              <button className="mt-8 px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition duration-300 w-full">
-                Get Started
-              </button>
-            </div>
-          </div>
 
           {/* Discounts and Offers
           <div className="mt-12 text-center">
